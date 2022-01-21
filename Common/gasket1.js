@@ -33,7 +33,10 @@ window.onload = function init()
 
     // And, add our initial point into our array of points
 
-    points = [ vec2(10000, 10000) ];
+    
+    
+    p = [ vec2(10000, 10000) ];
+    points = p;
 
     // Compute new points
     // Each new point is located midway between
