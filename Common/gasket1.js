@@ -33,16 +33,14 @@ window.onload = function init()
 
     // And, add our initial point into our array of points
 
-       points = [p]
-    // points = [ vec2(10000, 10000) ];
+    points = [ vec2(10000, 10000) ];
 
     // Compute new points
     // Each new point is located midway between
     // last point and a randomly chosen vertex
 
     for ( var i = 0; points.length < NumPoints; ++i ) {
-        var j = Math.floor(Math.random() * 10);
-        if (j >= 2) {j = 2}
+        var j = Math.floor(Math.random() * 3);
         p = add( points[i], vertices[j] );
         p = scale( 0.5, p );
         points.push( p );
